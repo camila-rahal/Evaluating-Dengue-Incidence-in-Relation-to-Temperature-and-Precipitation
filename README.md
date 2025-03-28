@@ -6,15 +6,15 @@ This project was done with Python version 3.12
 
 Requirements:
 
-pip install pandas
-pip install PyPDF2
-pip install openpyxl
-pip install statsmodels
-pip install matplotlib
+- - pip install pandas
+- - pip install PyPDF2
+- - pip install openpyxl
+- - pip install statsmodels
+- - pip install matplotlib
 
 # Dataset:
-precipitation data: https://www.ipmetradar.com.br/2estHist.php
-cases, temperature and umidity data: https://info.dengue.mat.br/services/api
+- - Precipitation data: https://www.ipmetradar.com.br/2estHist.php
+- - Cases, temperature and umidity data: https://info.dengue.mat.br/services/api
 
 # Files:
 
