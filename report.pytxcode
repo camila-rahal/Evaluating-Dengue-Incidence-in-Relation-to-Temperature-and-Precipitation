@@ -1,6 +1,6 @@
 =>PYTHONTEX#py#default#default#0#code#####13#
 print(f"Camila Batista Rahal")
-=>PYTHONTEX#py#default#default#1#code#####41#
+=>PYTHONTEX#py#default#default#1#code#####40#
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
@@ -21,7 +21,7 @@ model = smf.glm(formula=formula, data=df, family=sm.families.NegativeBinomial())
 # Print the model summary
 print(model.summary().as_latex())
 
-=>PYTHONTEX#py#default#default#2#code#####68#
+=>PYTHONTEX#py#default#default#2#code#####67#
 # Load dataset
 df_week = pd.read_csv("bauru_dengue_weekly.csv")
 

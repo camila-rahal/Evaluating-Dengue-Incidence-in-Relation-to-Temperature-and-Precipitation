@@ -7,7 +7,7 @@
 \textbf{Link Function:}       &       Log        & \textbf{  Scale:             } &    1.0000   \\
 \textbf{Method:}              &       IRLS       & \textbf{  Log-Likelihood:    } &   -856.19   \\
 \textbf{Date:}                & Fri, 28 Mar 2025 & \textbf{  Deviance:          } &    240.13   \\
-\textbf{Time:}                &     22:21:16     & \textbf{  Pearson chi2:      } &     371.    \\
+\textbf{Time:}                &     22:29:20     & \textbf{  Pearson chi2:      } &     371.    \\
 \textbf{No. Iterations:}      &        11        & \textbf{  Pseudo R-squ. (CS):} &   0.7956    \\
 \textbf{Covariance Type:}     &    nonrobust     & \textbf{                     } &             \\
 \bottomrule

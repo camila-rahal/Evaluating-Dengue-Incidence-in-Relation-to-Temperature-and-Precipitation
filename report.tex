@@ -33,7 +33,6 @@ Dengue cases data originate from official health surveillance databases, where n
 
 Weekly dengue case and climate data were aggregated to a monthly level, and monthly precipitation data was merged with the dataset. Missing climatic values were imputed using linear interpolation, a common approach for time-series data. Due to overdispersion in the data (variance: 3,064,512.39; mean: 556.66), Negative Binomial Regression was selected as it accommodates this issue, unlike Poisson regression, which assumes equal mean and variance. To account for the delayed effects of environmental conditions on dengue transmission, one-month lagged variables for temperature, humidity, and precipitation were introduced.
 
-
 \subsection*{Regression Analysis and Results}
 
 \subsubsection*{Monthly model}
@@ -63,7 +62,7 @@ print(model.summary().as_latex())
 
 The Negative Binomial regression model at the monthly level suggests that temperature and humidity (both lagged by one month) are significant predictors of dengue incidence. Higher temperatures (coef = 0.3719, p < 0.001) are associated with an increase in dengue cases, while humidity (coef = 0.1198, p < 0.001) also shows a positive correlation with dengue incidence. However, precipitation (coef = -0.0015, p = 0.219) is not statistically significant, indicating that it does not have a clear effect on monthly dengue cases. The model demonstrates good performance, with a Pseudo R² of 0.7956 and a log-likelihood of -856.19. Given the lack of significance of precipitation, this variable was removed, and the dataset was restructured to assess weekly trends.
 
-\subsection*{Weekly model}
+\subsubsection*{Weekly model}
 
 \begin{pycode}
 # Load dataset
