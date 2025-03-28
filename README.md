@@ -46,7 +46,12 @@ Negative Binomial Regression is chosen because the variance (3,064,512.39) is si
 
  The Negative Binomial regression model suggests that temperature and humidity (lagged by one month) are significantly associated with monthly dengue cases, as their p-values are <0.001. The coefficient for temperature (0.3719) indicates that higher temperatures increase dengue cases, while humidity (0.1198) also has a positive effect. Precipitation (-0.0015), however, is not statistically significant (p=0.219), meaning it does not have a clear effect on dengue cases in this model. The model explains about 79.56% of the variability in dengue cases (Pseudo R² = 0.7956), and the log-likelihood (-856.19) indicates a reasonably good fit.
  
- Discussion: Ideally this would be introduced per week lagged, which aligns with mosquitoes Aedes Aegypti life cycle (7-10 days), but due to precipitation data not being available per week, this study defined one-month lagged variables instead.
+ Ideally this would be introduced per week lagged, which aligns with mosquitoes Aedes Aegypti life cycle (7-10 days), but due to precipitation data not being available per week, this study defined one-month lagged variables instead.
 
+Because precitation being not statistically significant, the variable was droped and introduce weekly variables of temperature and humidity, and weekly lagged variables. 
+
+The Negative Binomial regression model at the monthly level suggests that temperature and humidity (lagged by one month) are significantly associated with dengue cases, as their p-values are <0.001. The coefficient for temperature (0.3719) indicates that higher temperatures increase dengue cases, while humidity (0.1198) also has a positive effect. Precipitation (-0.0015), however, is not statistically significant (p=0.219), meaning it does not have a clear effect in this model. The model explains about 79.56% of the variability in dengue cases (Pseudo R² = 0.7956), and the log-likelihood (-856.19) suggests a reasonably good fit.
+
+In contrast, at the weekly level, temperature is not a significant predictor (p = 0.669), meaning short-term variations in temperature do not strongly influence dengue cases. However, humidity (0.0245, p < 0.001) and the number of dengue cases from the previous week (0.0047, p < 0.001) are significant predictors, indicating that dengue cases tend to persist over time and that humidity plays a role in weekly fluctuations. The model explains 90.18% of the variability (Pseudo R² = 0.9018), suggesting a strong fit. This difference between the models suggests that the impact of temperature may be more cumulative over time, influencing dengue cases at a monthly level but not in short-term weekly variations.
 
 
