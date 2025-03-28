@@ -8,14 +8,11 @@ This project was done with Python version 3.12
 Requirements:
 
 pip install pandas
-pip install requests
-pip install beautifulsoup4
 pip install PyPDF2
 pip install openpyxl
 pip install statsmodels
 pip install matplotlib
-pip install pygam
-pip install selenium
+
 
 Data used was from Bauru: variables: 
 
