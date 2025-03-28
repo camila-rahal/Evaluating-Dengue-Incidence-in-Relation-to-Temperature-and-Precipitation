@@ -1,4 +1,4 @@
-                 Generalized Linear Model Regression Results                  
+\texttt{                 Generalized Linear Model Regression Results                  
 ==============================================================================
 Dep. Variable:                  casos   No. Observations:                  573
 Model:                            GLM   Df Residuals:                      569
@@ -6,14 +6,14 @@ Model Family:        NegativeBinomial   Df Model:                            3
 Link Function:                    Log   Scale:                          1.0000
 Method:                          IRLS   Log-Likelihood:                -2691.5
 Date:                Fri, 28 Mar 2025   Deviance:                       682.50
-Time:                        21:24:45   Pearson chi2:                     663.
+Time:                        22:00:30   Pearson chi2:                     663.
 No. Iterations:                    58   Pseudo R-squ. (CS):             0.9018
 Covariance Type:            nonrobust                                         
 ================================================================================
                    coef    std err          z      P>|z|      [0.025      0.975]
 --------------------------------------------------------------------------------
 Intercept        1.0579      0.519      2.040      0.041       0.041       2.074
-tempmed_lag1     0.0062      0.015      0.427      0.669      -0.022       0.035
-umidmed_lag1     0.0245      0.004      6.143      0.000       0.017       0.032
-casos_lag1       0.0047      0.000     43.148      0.000       0.005       0.005
-================================================================================
+tempmed\_lag1     0.0062      0.015      0.427      0.669      -0.022       0.035
+umidmed\_lag1     0.0245      0.004      6.143      0.000       0.017       0.032
+casos\_lag1       0.0047      0.000     43.148      0.000       0.005       0.005
+================================================================================}

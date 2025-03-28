@@ -18,9 +18,6 @@ model = smf.glm(formula=formula, data=df, family=sm.families.NegativeBinomial())
 # Print the model summary
 print(model.summary())
 
-
-
-
 ##------------------------------- Weekly temp and humidity data----------------------------------##
 
 # Load dataset

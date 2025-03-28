@@ -57,7 +57,8 @@ formula = "monthly_cases ~ temp_mean_lag1 + humidity_mean_lag1 + precipitation_l
 model = smf.glm(formula=formula, data=df, family=sm.families.NegativeBinomial()).fit()
 
 # Print the model summary
-print(model.summary().as_text())  # Ensures plain text output
+print(r"\texttt{" + model.summary().as_text().replace("_", "\_") + "}")
+
 \end{pycode}
 
 The Negative Binomial regression model at the monthly level suggests that temperature and humidity (both lagged by one month) are significant predictors of dengue incidence. Higher temperatures (coef = 0.3719, p < 0.001) are associated with an increase in dengue cases, while humidity (coef = 0.1198, p < 0.001) also shows a positive correlation with dengue incidence. However, precipitation (coef = -0.0015, p = 0.219) is not statistically significant, indicating that it does not have a clear effect on monthly dengue cases. The model demonstrates good performance, with a Pseudo R² of 0.7956 and a log-likelihood of -856.19. Given the lack of significance of precipitation, this variable was removed, and the dataset was restructured to assess weekly trends.
@@ -82,7 +83,8 @@ model_nb = smf.glm(formula=formula, data=df_week,
                     family=sm.families.NegativeBinomial()).fit()
 
 # Print the results
-print(model_nb.summary().as_text())  # Ensures LaTeX compatibility
+print(r"\texttt{" + model_nb.summary().as_text().replace("_", "\_") + "}")
+
 \end{pycode}
 
 The Negative Binomial regression model at the weekly level suggests that temperature is not a significant predictor of dengue cases (coef = 0.0062, p = 0.669), indicating that short-term fluctuations in temperature do not strongly impact dengue transmission. However, humidity (coef = 0.0245, p < 0.001) is a significant predictor of weekly dengue fluctuations, suggesting that humidity plays a more immediate role in dengue incidence. Additionally, the number of dengue cases from the previous week (coef = 0.0047, p < 0.001) is also a strong predictor, highlighting the persistence of dengue cases over time. The model exhibits strong performance, with a Pseudo R² of 0.9018 and a log-likelihood of -2691.5.

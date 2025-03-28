@@ -1,19 +1,19 @@
-                 Generalized Linear Model Regression Results                  
+\texttt{                 Generalized Linear Model Regression Results                  
 ==============================================================================
-Dep. Variable:          monthly_cases   No. Observations:                  131
+Dep. Variable:          monthly\_cases   No. Observations:                  131
 Model:                            GLM   Df Residuals:                      127
 Model Family:        NegativeBinomial   Df Model:                            3
 Link Function:                    Log   Scale:                          1.0000
 Method:                          IRLS   Log-Likelihood:                -856.19
 Date:                Fri, 28 Mar 2025   Deviance:                       240.13
-Time:                        21:24:45   Pearson chi2:                     371.
+Time:                        22:00:30   Pearson chi2:                     371.
 No. Iterations:                    11   Pseudo R-squ. (CS):             0.7956
 Covariance Type:            nonrobust                                         
 ======================================================================================
                          coef    std err          z      P>|z|      [0.025      0.975]
 --------------------------------------------------------------------------------------
 Intercept            -11.9252      1.448     -8.233      0.000     -14.764      -9.086
-temp_mean_lag1         0.3719      0.039      9.451      0.000       0.295       0.449
-humidity_mean_lag1     0.1198      0.012     10.005      0.000       0.096       0.143
-precipitation_lag1    -0.0015      0.001     -1.230      0.219      -0.004       0.001
-======================================================================================
+temp\_mean\_lag1         0.3719      0.039      9.451      0.000       0.295       0.449
+humidity\_mean\_lag1     0.1198      0.012     10.005      0.000       0.096       0.143
+precipitation\_lag1    -0.0015      0.001     -1.230      0.219      -0.004       0.001
+======================================================================================}
