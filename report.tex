@@ -26,7 +26,7 @@ Dengue cases data originate from official health surveillance databases, where n
 
 \begin{itemize}
     \item Precipitation data: https://www.ipmetradar.com.br/2estHist.php
-    \item Cases, temperature and umidity data: https://info.dengue.mat.br/services/api
+    \item Cases, temperature and humidity data: https://info.dengue.mat.br/services/api
 \end{itemize}
 
 \subsection*{Data processing}
@@ -57,7 +57,7 @@ formula = "monthly_cases ~ temp_mean_lag1 + humidity_mean_lag1 + precipitation_l
 model = smf.glm(formula=formula, data=df, family=sm.families.NegativeBinomial()).fit()
 
 # Print the model summary
-print(r"\texttt{" + model.summary().as_text().replace("_", "\_") + "}")
+print(model.summary().as_latex())
 
 \end{pycode}
 
@@ -83,7 +83,7 @@ model_nb = smf.glm(formula=formula, data=df_week,
                     family=sm.families.NegativeBinomial()).fit()
 
 # Print the results
-print(r"\texttt{" + model_nb.summary().as_text().replace("_", "\_") + "}")
+print(model_nb.summary().as_latex())
 
 \end{pycode}
 

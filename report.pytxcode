@@ -19,7 +19,7 @@ formula = "monthly_cases ~ temp_mean_lag1 + humidity_mean_lag1 + precipitation_l
 model = smf.glm(formula=formula, data=df, family=sm.families.NegativeBinomial()).fit()
 
 # Print the model summary
-print(r"\texttt{" + model.summary().as_text().replace("_", "\_") + "}")
+print(model.summary().as_latex())
 
 =>PYTHONTEX#py#default#default#2#code#####68#
 # Load dataset
@@ -39,7 +39,7 @@ model_nb = smf.glm(formula=formula, data=df_week,
                     family=sm.families.NegativeBinomial()).fit()
 
 # Print the results
-print(r"\texttt{" + model_nb.summary().as_text().replace("_", "\_") + "}")
+print(model_nb.summary().as_latex())
 
 =>PYTHONTEX:SETTINGS#
 version=0.18

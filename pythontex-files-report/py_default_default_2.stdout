@@ -1,19 +1,25 @@
-\texttt{                 Generalized Linear Model Regression Results                  
-==============================================================================
-Dep. Variable:                  casos   No. Observations:                  573
-Model:                            GLM   Df Residuals:                      569
-Model Family:        NegativeBinomial   Df Model:                            3
-Link Function:                    Log   Scale:                          1.0000
-Method:                          IRLS   Log-Likelihood:                -2691.5
-Date:                Fri, 28 Mar 2025   Deviance:                       682.50
-Time:                        22:00:30   Pearson chi2:                     663.
-No. Iterations:                    58   Pseudo R-squ. (CS):             0.9018
-Covariance Type:            nonrobust                                         
-================================================================================
-                   coef    std err          z      P>|z|      [0.025      0.975]
---------------------------------------------------------------------------------
-Intercept        1.0579      0.519      2.040      0.041       0.041       2.074
-tempmed\_lag1     0.0062      0.015      0.427      0.669      -0.022       0.035
-umidmed\_lag1     0.0245      0.004      6.143      0.000       0.017       0.032
-casos\_lag1       0.0047      0.000     43.148      0.000       0.005       0.005
-================================================================================}
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}   &      casos       & \textbf{  No. Observations:  } &      573    \\
+\textbf{Model:}           &       GLM        & \textbf{  Df Residuals:      } &      569    \\
+\textbf{Model Family:}    & NegativeBinomial & \textbf{  Df Model:          } &        3    \\
+\textbf{Link Function:}   &       Log        & \textbf{  Scale:             } &    1.0000   \\
+\textbf{Method:}          &       IRLS       & \textbf{  Log-Likelihood:    } &   -2691.5   \\
+\textbf{Date:}            & Fri, 28 Mar 2025 & \textbf{  Deviance:          } &    682.50   \\
+\textbf{Time:}            &     22:21:16     & \textbf{  Pearson chi2:      } &     663.    \\
+\textbf{No. Iterations:}  &        58        & \textbf{  Pseudo R-squ. (CS):} &   0.9018    \\
+\textbf{Covariance Type:} &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                       & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{Intercept}     &       1.0579  &        0.519     &     2.040  &         0.041        &        0.041    &        2.074     \\
+\textbf{tempmed\_lag1} &       0.0062  &        0.015     &     0.427  &         0.669        &       -0.022    &        0.035     \\
+\textbf{umidmed\_lag1} &       0.0245  &        0.004     &     6.143  &         0.000        &        0.017    &        0.032     \\
+\textbf{casos\_lag1}   &       0.0047  &        0.000     &    43.148  &         0.000        &        0.005    &        0.005     \\
+\bottomrule
+\end{tabular}
+%\caption{Generalized Linear Model Regression Results}
+\end{center}
